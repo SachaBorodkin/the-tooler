@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./assets/logos/logo-noname.png">
+    <title>Homepage</title>
+</head>
+<body>
+ <header>
+<div class="logo">
+    <a href="index.html"><img src="./assets/logos/logo-noname.png" alt="Logo">
+    <h1>tooler</h1>
+</a>
+</div>
+</br>
+<div class="nav">
+   <details class="nav-category">
+  <summary class="nav-summary">
+    <span class="chevron">▸</span>
+    <span>Time related</span>
+  </summary>
+  <ul class="nav-items">
+    <li><button type="button" onclick="openModal('Timer')">Timer</button></li>
+    <li><button type="button" onclick="openModal('Chronometer')">Chronometer</button></li>
+  </ul>
+</details>
+   <details class="nav-category">
+  <summary class="nav-summary">
+    <span class="chevron">▸</span>
+    <span>Text & Code Utilities</span>
+  </summary>
+  <ul class="nav-items">
+    <li><button type="button" onclick="openModal('TextEditor')">Text Editor</button></li>
+    <li><button type="button" onclick="openModal('CodeFormatter')">Code Formatter</button></li>
+    <li><button type="button" onclick="openModal('DiffChecker')">Diff Checker</button></li>
+  </ul>
+</details>
+    </div>
+ </header>   
+ <main>
+<div class="modal-panel" id="Timer">
+<h1>Timer</h1>
+</div>
+<div class="modal-panel" id="Chronometer">
+<h1>Chronometer</h1>
+</div>
+<div class="modal-panel" id="TextEditor">
+<h1>Text Editor</h1>
+</div>
+<div class="modal-panel" id="CodeFormatter">
+<h1>Code Formatter</h1>
+</div>
+<div class="modal-panel" id="DiffChecker">    
+<h1>Diff Checker</h1>  
+</div>
+ </main>
+ <script src="script.js"></script>
+</body>
+</html>
